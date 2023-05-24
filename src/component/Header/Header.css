@@ -1,0 +1,31 @@
+.header-full {
+    align-items: center;
+
+}
+
+.box-shadow {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+}
+
+.header-full nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header-full nav a {
+    color: #1E90C2;
+    padding: 0 9px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 70px;
+}
+.header-full nav a.active {
+    color: #1B4388;
+    font-weight: bold;
+}
+
+  
