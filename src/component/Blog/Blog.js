@@ -5,7 +5,7 @@ import './Blog.css'
 const Blog = ({ blog }) => {
     const navigate = useNavigate()
     // console.log(blogBody)
-    const { title, blog:blogBody , imageURL, admin } = blog;
+    const { title, blog:blogBody , imageURL, admin, _id } = blog;
 
     return (
         <div className="blog">
@@ -21,7 +21,7 @@ const Blog = ({ blog }) => {
                         <h2>{title}</h2>
                         <span>Posted By {admin}</span>
                         {
-                            blogBody.length < 400 ? blogBody.length : <p>{blogBody.slice(0, 400)}<span onClick={()=>navigate('/blog-details')}>Read More</span></p>
+                            blogBody.length < 400 ? blogBody.length : <p>{blogBody.slice(0, 400)}<span onClick={()=>navigate(`/blog/id${_id}`)}>Read More</span></p>
                         }
                     </div>
                 </Col>
